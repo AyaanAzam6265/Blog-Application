@@ -20,7 +20,7 @@ public class AuthController {
     @Autowired
     private  JwtTokenUtil jwtTokenUtil;
 
-    @PostMapping("/signin")
+    @PostMapping("/login")
     @CrossOrigin("**")
     public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest) {
         try {
