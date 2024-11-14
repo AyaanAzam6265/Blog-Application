@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
     @Autowired
     UserService userService;
-    @PostMapping("/createUser")
+    @PostMapping("/register")
     public ResponseEntity<MessageResponse> createUser(@RequestBody UserRequest userRequest){
         String role = "user";
         userService.createUser(userRequest,role);
